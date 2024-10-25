@@ -1,4 +1,3 @@
-/* Стили для всех устройств */
 body {
     margin: 0;
     padding: 0;
@@ -9,10 +8,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh; /* Изменено с height на min-height */
+    overflow-y: auto; /* Добавляем вертикальную прокрутку */
     text-align: center;
-    animation: backgroundAnimation 10s infinite; /* Анимация фона */
+    animation: backgroundAnimation 10s infinite;
 }
 
 @keyframes backgroundAnimation {
@@ -27,7 +26,7 @@ h1 {
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), 0 0 10px #ffeaa7;
     animation: floatText 4s ease-in-out infinite;
     margin-bottom: 1rem;
-    font-family: 'Comic Sans MS', cursive; /* Креативный шрифт */
+    font-family: 'Comic Sans MS', cursive;
 }
 
 @keyframes floatText {
@@ -117,52 +116,9 @@ p {
     left: 0;
 }
 
-.confetti {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: #ff7675;
-    opacity: 0.7;
-    animation: fall 3s infinite;
-}
-
-@keyframes fall {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(100vh); }
-}
-
-/* Стиль для обратного отсчета */
 #countdown {
     font-size: 2em;
     color: #ffeaa7;
     margin-top: 20px;
     text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
-}
-
-/* Мобильные стили */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2.5em; /* Уменьшаем размер заголовка для мобильных устройств */
-    }
-
-    p {
-        font-size: 1.2em; /* Уменьшаем размер текста для мобильных устройств */
-        padding: 0 0.5rem; /* Уменьшаем отступы */
-    }
-
-    .button {
-        padding: 0.5rem 1.5rem; /* Уменьшаем отступы кнопки */
-        font-size: 1em; /* Уменьшаем размер текста кнопки */
-    }
-}
-
-/* Стили для планшетов */
-@media (min-width: 769px) and (max-width: 1024px) {
-    h1 {
-        font-size: 3em; /* Уменьшаем размер заголовка для планшетов */
-    }
-
-    p {
-        font-size: 1.4em; /* Уменьшаем размер текста для планшетов */
-    }
 }
