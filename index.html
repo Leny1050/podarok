@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С Днем Рождения!</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Подключаем CSS -->
+</head>
+<body>
+    <h1>С Днем Рождения! 🎉</h1>
+    <p>Поздравляю! Теперь тебе 15 лет, и ты стала ближе к званию "милфа"! 💖 Обожаю тебя!</p>
+    <p>Желаю всего самого лучшего! Ты всегда можешь на меня рассчитывать! 😊 Это не последний подарок, который я тебе дарю, так что в следующем году будет еще лучше!</p>
+    <button class="button" onclick="openModal()">Секретное сообщение 🤫</button>
+    
+    <div class="sparkles">
+        <div class="sparkle" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
+        <div class="sparkle" style="top: 50%; left: 30%; animation-delay: 0.5s;"></div>
+        <div class="sparkle" style="top: 80%; left: 70%; animation-delay: 1s;"></div>
+        <div class="sparkle" style="top: 30%; left: 80%; animation-delay: 1.5s;"></div>
+        <div class="sparkle" style="top: 70%; left: 40%; animation-delay: 2s;"></div>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Секретное послание! 🎁</h2>
+            <p>ПОДСКАЗОЧКА К ПРЕДСТОЯШЕМУ ПОДАРКУ</p>
+            <p>"Приготовься к захватывающему путешествию в мир, где магия и опасности идут рука об руку. Узнай, как одна тень может изменить всё!"</p>
+            <p>Удачи в разгадке! 😄</p>
+        </div>
+    </div>
+
+    <audio id="modalSound" src="dle_audio_begin:https://zvukipro.com/uploads/files/2021-11/1637835725_kidcheer.mp3"></audio> <!-- Замените путь на ваш файл звука -->
+
+    <script src="script.js"></script> <!-- Подключаем JavaScript -->
+</body>
+</html>
