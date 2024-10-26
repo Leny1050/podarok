@@ -37,7 +37,7 @@ window.onload = function() {
 
 // Функция обратного отсчета
 const countdownElement = document.getElementById("countdown");
-const countdownDate = new Date("2024-10-26T12:25:00").getTime(); // Укажите вашу дату: 26.10.2024 12:25
+const countdownDate = new Date("2024-10-26T13:25:00").getTime(); // Укажите вашу дату: 26.10.2024 12:25
 
 const countdownInterval = setInterval(function() {
     const now = new Date().getTime();
